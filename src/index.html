@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+  
+<html>
+    <head>
+        <title>Book Program Discussion</title>
+        <link rel="icon" href="logo.jpg">
+        <meta name="Book Program Discussion" content="Book Club Website">
+        <meta authour="Osama Kashif">
+        <!-- Authour: Osama Kashif -->
+        <!-- HTML file for High Fidelity Prototyping -->
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+      
+    <body class="custom-background-color">
+        <script src="script.js"></script>
+        <nav>
+            <a href="index.html"><img class="logo" src="logo.jpg"></a>
+            <h1 class="title"><a href="index.html" class="custom-color">BPD</a></h1>
+            <ul class="links">
+                <li id="option"><a href="index.html" class="custom-color" id="current-page">Home</a></li>
+                <li id="option"><a href="javascript:void(0)" onclick="pageUnavailable('About Us')" class="custom-color">About Us</a></li>
+                <li id="option"><a href="javascript:void(0)" onclick="pageUnavailable('Books')" class="custom-color">Books</a></li>
+                <li id="option"><a href="javascript:void(0)" onclick="pageUnavailable('Get Started')" class="custom-color">Get Started</a></li>
+                <li id="option"><a href="javascript:void(0)" onclick="pageUnavailable('News')" class="custom-color">News</a></li>
+                <li id="option"><a href="javascript:void(0)" onclick="pageUnavailable('Members')" class="custom-color">Members</a></li>
+                <li id="option"><a href="javascript:void(0)" onclick="pageUnavailable('Login')" class="custom-color">Login</a></li>
+                <li id="option"><a href="javascript:void(0)" id="trigger-modal" onclick="modalShow()" class="custom-color">Register</a></li>
+            </ul>
+        </nav>
+
+        <div class="Top">
+            <h2>Welcome to</h2>
+            <h1>Book Program Discussion</h1>
+            <p>
+                A community that is geared to support your literary <br>
+                needs. Bringing you and your group to your desired <br>
+                books, and professional discussion notes.
+            </p>
+        </div>
+        <div class = "latest-news">
+            <h2><a href="javascript:void(0)" onclick="pageUnavailable('News')" class="custom-color">Latest News</a></h2>
+            <img src="pexels-ekrulila-3957616.jpg" alt="Image for Latest News">
+            <!-- Reference link for image: https://www.pexels.com/photo/person-holding-white-and-brown-newspaper-3957616/ -->
+            <h3>COVID-19 Update Mon 15 Feb 2021</h3>
+            <p>Kia ora whānau. Well, here we are again. Here's a quick reminder of...<a href="javascript:void(0)" onclick="pageUnavailable('Read More')" class="custom-color">Read More</a></p>
+        </div>
+        <div class = "books">
+            <h2><a href="javascript:void(0)" onclick="pageUnavailable('Books')" class="custom-color">Books</a></h2>
+            <a href="javascript:void(0)" onclick="pageUnavailable('Your Soul Is A River')"><img src="pexels-thought-catalog-904620.jpg" alt="Your Soul Is A River"></a>
+            <!-- Reference link for image: https://www.pexels.com/photo/your-soul-is-a-river-by-nikita-gill-book-904620/ -->
+        </div>
+        <div class = "get-involved">
+            <h2><a href="javascript:void(0)" onclick="pageUnavailable('Get Started')">Get Involved</a></h2>
+            <p>Meet new people..<br>
+                Experience new and interesting reading adventures..<br>
+                Whatever the reason you want to be part of a book group, we can help.<br>
+            </p>
+            <p>To get involved and join us, <br>register with us now!</p>
+            <button href="javascript:void(0)" id="trigger-modal" onclick="modalShow()" class="custom-color register-button">Register</button>
+        </div>
+
+        <!-- For registration form -->
+        <!-- Reference link: https://www.w3schools.com/howto/howto_css_modals.asp -->
+        <!-- Trigger/Open The Modal -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div>
+                    <span class="close" onclick="modalClose()">&times;</span>
+                </div>
+                <div id ="bookclubrego">
+                    <form>
+                        <h1 id="form-title">Registration Form</h1>
+                        <div id = "userDetails">
+                            <h1>User Details</h1>
+                            <label class="custom-color">Given name:</label>
+                            <input type="text"><br><br>
+                            <label class="custom-color">Surname:</label>
+                            <input type="text"><br><br>
+                            <label class="custom-color">Username:</label>
+                            <input type="text"><br><br>
+                            <label class="custom-color">Password:</label>
+                            <input type="text"><br><br>
+                        </div>
+                        <div id = "addresses">
+                            <h1>Addresses</h1>
+                            <label class="custom-color">Home address:</label>
+                            <input type="text"><br><br>
+                            <label class="custom-color">Work Adress:</label>
+                            <input type="text"><br><br>
+                        </div>
+                        <div id = "contacts">
+                            <h1>Contacts</h1>
+                            <label class="custom-color">Mobile number:</label>
+                            <input type="text"><br><br>
+                            <label class="custom-color">Email:</label>
+                            <input type="text"><br><br>
+                        </div>
+                      </form>
+                      <div class="submit-container">
+                          <button class ="custom-background-color submit" type="submit" onclick="modalClose()">Submit</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- Registration form ends -->
+    </body>
+</html>

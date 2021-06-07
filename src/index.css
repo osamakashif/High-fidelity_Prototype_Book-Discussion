@@ -1,0 +1,318 @@
+/* Authour: Osama Kashif */
+/* CSS file for High Fidelity Prototyping */
+
+.custom-color { 
+    color: #3B83BD;
+}
+
+.custom-background-color { 
+    background-color: #3B83BD;
+}
+
+body {
+    margin: 0px;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+    text-transform: uppercase;
+    padding: 0 2vw;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 5px palevioletred;
+}
+
+nav .logo {
+    float: left;
+    width: 80px;
+    height: 5.5rem;
+}
+
+nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#option:hover{
+    text-decoration: underline;
+}
+
+#current-page {
+    font-weight: 700;
+    color: #FF8C00;
+}
+
+nav .title {
+    float: left;
+    height: auto;  
+    font-size: 42px;
+    font-weight: 700;
+}
+
+nav .title a {
+    text-decoration: none;
+}
+
+nav .links li {
+    list-style: none;
+}
+    
+nav .links a {
+    display: block;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+}
+    
+.Top {
+    padding-top: 25px;
+    padding-left: 50px;
+    color: #ffffff;
+    margin-bottom: 50px;
+    float: unset;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.Top h2 {
+    text-align: left;
+    font-size: 38px;
+    font-style: italic;
+}
+
+.Top h1 {
+    text-align: center;
+    font-size: 68px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.Top p {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.latest-news {
+    background-color: #ffffff;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 70px;
+    border: solid palevioletred 5px;
+    border-radius: 5px;
+}
+
+.latest-news h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    text-align: center;
+}
+
+.latest-news a{
+    text-decoration: none;
+}
+.latest-news a:hover {
+    text-decoration: underline;
+}
+
+.latest-news img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;   
+}
+
+.latest-news h3 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.latest-news p {
+    text-align: center;    
+}
+
+.books {
+    background-color: #ffffff;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 70px;
+    border: solid palevioletred 5px;
+    border-radius: 5px;
+}
+
+.books h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    text-align: center;
+}
+
+.books a{
+    text-decoration: none;
+}
+.books a:hover {
+    text-decoration: underline;
+}
+
+.books img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.get-involved {
+    text-align: center;
+    padding-bottom: 70px;
+    color: #ffffff;
+}
+
+.get-involved h2 {
+    font-size: 42px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.get-involved a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.get-involved a:hover {
+    text-decoration: underline;
+}
+
+.get-involved p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.register-button {
+    border-radius: 10px;
+    border: solid 3px palevioletred;
+    font-size: 24px;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+.register-button:hover,
+  .register-button:focus{
+      cursor: pointer;
+}
+
+/* For the registration form: */
+/* Reference link: https://www.w3schools.com/howto/howto_css_modals.asp */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+.close:hover,
+  .close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#trigger-modal {
+    border-right: solid 2px palevioletred;
+    border-left: solid 2px palevioletred;
+}
+#bookclubrego {
+    justify-content: center;
+    align-items: center;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+}
+
+#form-title {
+    color: #4B0082;
+    font-size: 38px;
+    text-align: center;
+    border-bottom: solid 5px #3b83bd;
+}
+
+#userDetails {
+    border-bottom: solid 5px #3b83bd;
+}
+#addresses {
+    border-bottom: solid 5px #3b83bd;
+}
+
+#userDetails input {
+    width: 500px;
+}
+#addresses input {
+    width: 500px;
+}
+
+#contacts input {
+    width: 500px;
+}
+
+#bookclubrego label {
+    margin-left: 8%;
+    width: 130px;
+    display: inline-block;
+}
+
+#bookclubrego input {
+    border: solid 2px palevioletred;
+    border-radius: 10px;
+}
+
+.submit-container {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.submit {
+    color: #ffffff;
+    border-radius: 15px;
+    border: solid 2px palevioletred;
+    font-size: 20px;
+    float: right;
+}
+.submit:hover,
+  .submit:focus {
+    cursor: pointer;
+  }
+
+/* Registration form stuff ends */
